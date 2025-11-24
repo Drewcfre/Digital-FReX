@@ -1,0 +1,76 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    padding: 0;
+
+    background: grey;
+}
+
+#gameContainer {
+    position: fixed;
+    top:  50%;
+    left: 50%;
+
+    width:  660px;
+    height: 860px;
+
+    transform: translate(-50%, -50%);
+
+    background: white;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#gameScene {
+    width: 640px;
+    height: 640px;
+
+    margin: 10px;
+    padding: 0;
+
+    background: black;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#gameUI {
+    width: 620px;
+    height: 100px;
+
+    margin: 10px;
+    padding: 10px;
+
+    background: white;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+#buttonContainer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buttonContainer button:hover {
+    background: #999999;
+}
+
+#buttonContainer button:active {
+    background: #663366;
+}
