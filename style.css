@@ -41,7 +41,6 @@ html, body {
 
 #gameUI {
     width: 620px;
-    height: 100px;
 
     margin: 10px;
     padding: 10px;
@@ -55,11 +54,16 @@ html, body {
         0 4px 8px rgba(0,0,0,0.15);
 }
 
+#gameText {
+    margin: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
 #buttonContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 80px;
 }
 
 button {

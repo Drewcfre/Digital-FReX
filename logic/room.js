@@ -1,4 +1,4 @@
-export class Room {
+export default class Room {
     constructor(backdropURL, roomNPCs, dialogList, dialogResponses, correctAnswer, unlocked) {
         this.backdropURL = backdropURL;
         this.roomNPCs = roomNPCs;
@@ -7,6 +7,4 @@ export class Room {
         this.correctAnswer = correctAnswer;
         this.unlocked = unlocked;
     }
-
-
 }

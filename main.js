@@ -1,12 +1,13 @@
-import Room from "logic/room";
+import Room from "./logic/room.js";
 
 const myCanvas = document.getElementById("gameScene");
+const ui = document.getElementById("gameUI");
 const ctx = myCanvas.getContext("2d");
 
 ctx.fillStyle="blue";
 ctx.fillRect(0, 0, 150, 50);
 
-let appendURL = "resources/images/"
+let appendURL = "resources/images/";
 
 let roomList = [
     new Room(`${appendURL}commons.png`, "MASCOT", ["Welcome to the Commons!", "How do you like it?"], ["I love it!", "It's okay.", "Not a big fan.", "I'd rather die than stay here"], 1, true),
@@ -15,4 +16,11 @@ let roomList = [
 
 let currentRoom = roomList[0];
 
-function setRoom() {}
+setRoom();
+
+function setRoom() {
+    ui.children[0].innerHTML = "";
+    currentRoom.dialogList.forEach(element => {
+        ui.children[0].innerHTML += element+"<br>";
+    });
+}
