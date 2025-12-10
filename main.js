@@ -11,14 +11,6 @@ ctx.fillStyle="blue";
 let appendURL = "resources/images/";
 
 let roomList = [
-<<<<<<< Updated upstream
-    new Room(`${appendURL}commons.png`, "MASCOT", ["Welcome to the Commons!", "How do you like it?"], ["I love it!", "It's okay. (correct)", "Not a big fan.", "I'd rather die than stay here"], 1, true),
-    new Room(`${appendURL}coachingRoom.png`, `COACH`, ["Hey, welcome to the coaching room!", "Are you new here?"], ["Yeah, I'm a neubie.", "I think so. (correct)", "I'm a first-year", "I've been here three years. How do you not know me?"], 1, true),
-    new Room(`image`, "npcs", ["Dialog"], ["1 (correct)", "2", "3", "4"], 0, true),
-    new Room(`image`, "npcs", ["Dialog"], ["1", "2 (correct)", "3", "4"], 1, true),
-    new Room(`image`, "npcs", ["Dialog"], ["1", "2", "3 (correct)", "4"], 2, true),
-    new Room(`image`, "npcs", ["Dialog"], ["1", "2", "3", "4 (correct)"], 3, true),
-=======
     new Room(`${appendURL}commons.png`, "MASCOT", 
         ["Commons:",
             "Answer questions correctly and you'll be able to progress through the school.",
@@ -59,7 +51,6 @@ let roomList = [
         ],
         ["$55k", "$65k", "80k", ">$100k"],
         3, true)
->>>>>>> Stashed changes
 ];
 
 let currentRoom = roomList[0];
@@ -74,18 +65,11 @@ for (let index = 0; index < buttons.children.length; index++) {
             element.id.slice(1);
         
         if (index == currentRoom.correctAnswer) {
-<<<<<<< Updated upstream
-            roomIndex = Math.min(roomList.length-1, roomIndex+1);
-            setRoom();
-        }
-        else alert(cap+" ("+element.textContent+") button was not correct, try again!");
-=======
             if (roomIndex >= roomList.length - 1) alert("Congrats, you won!")
             else roomIndex++;
             setRoom();
         }
         else alert(cap+" button ("+element.textContent+") was not correct.\nTry again!");
->>>>>>> Stashed changes
     }
 }
 
