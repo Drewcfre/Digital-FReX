@@ -11,12 +11,55 @@ ctx.fillStyle="blue";
 let appendURL = "resources/images/";
 
 let roomList = [
+<<<<<<< Updated upstream
     new Room(`${appendURL}commons.png`, "MASCOT", ["Welcome to the Commons!", "How do you like it?"], ["I love it!", "It's okay. (correct)", "Not a big fan.", "I'd rather die than stay here"], 1, true),
     new Room(`${appendURL}coachingRoom.png`, `COACH`, ["Hey, welcome to the coaching room!", "Are you new here?"], ["Yeah, I'm a neubie.", "I think so. (correct)", "I'm a first-year", "I've been here three years. How do you not know me?"], 1, true),
     new Room(`image`, "npcs", ["Dialog"], ["1 (correct)", "2", "3", "4"], 0, true),
     new Room(`image`, "npcs", ["Dialog"], ["1", "2 (correct)", "3", "4"], 1, true),
     new Room(`image`, "npcs", ["Dialog"], ["1", "2", "3 (correct)", "4"], 2, true),
     new Room(`image`, "npcs", ["Dialog"], ["1", "2", "3", "4 (correct)"], 3, true),
+=======
+    new Room(`${appendURL}commons.png`, "MASCOT", 
+        ["Commons:",
+            "Answer questions correctly and you'll be able to progress through the school.",
+            "Reach the top to win!"], 
+        ["Let's go!","Wait, what?","Don't feel like it.","I'll just stay here, thanks."],
+        0, true),
+    new Room(`${appendURL}coachingRoom.png`, `COACH`, 
+        ["Coaching Room:",
+            "Hey, do you know which room is only accessible through the coaching room?",
+            "It seems important..."], 
+        ["Cafeteria", "Ordinary Classroom", "Testing Room", "Server Room"],
+        2, true),
+    new Room(`image`, "npcs",
+        ["Llama Base:",
+            "Neumont's got a pretty cool mascot, eh?",
+            "Would you happen to know what llama is in hexidecimal?"
+        ],
+        ["6A6A616D61", "5050515D51", "Hexi-what now?", "6C6C616D61"],
+        3, true),
+    new Room(`image`, "npcs",
+        ["Llama Lounge:",
+            "The lounge is a great place to focus and unwind!",
+            "Speaking of focus, how long are quarters at Neumont?"
+        ],
+        ["8 weeks", "10 weeks", "12 weeks", "15 weeks"],
+        1, true),
+    new Room(`image`, "npcs",
+        ["Registrar:",
+            "Neumont has tons of classes available to choose from!",
+            "Which of the following is NOT a degree program at Neumont?"
+        ],
+        ["BS Computer Science", "BS Software Engines", "MS Artificial Intelligence", "BS Software & Game Dev"],
+        1, true),
+    new Room(`image`, "npcs",
+        ["Student Store:",
+            "Commercialism? Count me in!",
+            "How much is the average starting salary for Computer Science graduates in the US?"
+        ],
+        ["$55k", "$65k", "80k", ">$100k"],
+        3, true)
+>>>>>>> Stashed changes
 ];
 
 let currentRoom = roomList[0];
@@ -31,10 +74,18 @@ for (let index = 0; index < buttons.children.length; index++) {
             element.id.slice(1);
         
         if (index == currentRoom.correctAnswer) {
+<<<<<<< Updated upstream
             roomIndex = Math.min(roomList.length-1, roomIndex+1);
             setRoom();
         }
         else alert(cap+" ("+element.textContent+") button was not correct, try again!");
+=======
+            if (roomIndex >= roomList.length - 1) alert("Congrats, you won!")
+            else roomIndex++;
+            setRoom();
+        }
+        else alert(cap+" button ("+element.textContent+") was not correct.\nTry again!");
+>>>>>>> Stashed changes
     }
 }
 
@@ -52,5 +103,5 @@ function setRoom() {
     }
 
     ctx.clearRect(0,0,myCanvas.width,myCanvas.height)
-    ctx.fillRect((roomIndex%2)*150,Math.floor(roomIndex/2)*50, 150, 50);
+    ctx.fillRect((roomIndex%2)*150,100-(Math.floor(roomIndex/2)*50), 150, 50);
 }
