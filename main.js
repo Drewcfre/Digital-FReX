@@ -118,7 +118,7 @@ function puzzleOne() {
     }
 
     ctx.clearRect(0,0,myCanvas.width,myCanvas.height)
-    ctx.fillRect((roomIndex%2)*150,100-(Math.floor(roomIndex/2)*50), 150, 50);
+    ctx.fillRect((roomIndex%2)*150,112.5-(Math.floor(roomIndex/2)*37.5), 150, 37.5);
 
     for (let index = 0; index < buttons.children.length; index++) {
     const element = buttons.children[index];
@@ -175,7 +175,7 @@ function finalPuzzle(){
     }
 
     ctx.clearRect(0,0,myCanvas.width,myCanvas.height)
-    ctx.fillRect((roomIndex%2)*150,100-(Math.floor(roomIndex/2)*50), 150, 50);
+    ctx.fillRect((roomIndex%2)*150,112.5-(Math.floor(roomIndex/2)*37.5), 150, 37.5);
 
     for (let index = 0; index < buttons.children.length; index++) {
     const element = buttons.children[index];
@@ -212,5 +212,5 @@ function setRoom() {
     }
 
     ctx.clearRect(0,0,myCanvas.width,myCanvas.height)
-    ctx.fillRect((roomIndex%2)*150,100-(Math.floor(roomIndex/2)*50), 150, 50);
+    ctx.fillRect((roomIndex%2)*150,112.5-(Math.floor(roomIndex/2)*37.5), 150, 37.5);
 }
