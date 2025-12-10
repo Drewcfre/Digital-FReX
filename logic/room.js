@@ -1,10 +1,11 @@
 export default class Room {
-    constructor(backdropURL, roomNPCs, dialogList, dialogResponses, correctAnswer, unlocked) {
+    constructor(backdropURL, roomNPCs, dialogList, dialogResponses, correctAnswer, incorrectResponse,unlocked) {
         this.backdropURL = backdropURL;
         this.roomNPCs = roomNPCs;
         this.dialogList = dialogList;
         this.dialogResponses = dialogResponses;
         this.correctAnswer = correctAnswer;
+        this.incorrectResponse = incorrectResponse;
         this.unlocked = unlocked;
     }
 }
