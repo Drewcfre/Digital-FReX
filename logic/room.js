@@ -32,7 +32,7 @@ export const roomList = [
     ),
     new Room(
         `${filePath}/locations/llamaBase.png`,
-        `${filePath}/characters/Burk_BSIS.png`,
+        `${filePath}/characters/burk_BSIS.png`,
         ["Llama Base:", "Neumont's got a pretty cool mascot, eh?", "Would you happen to know what llama is in hexadecimal?"],
         ["6A6A616D61", "5050515D51", "Hex-what now?", "6C6C616D61"],
         3,
