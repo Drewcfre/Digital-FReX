@@ -22,7 +22,7 @@ export const roomList = [
         true
     ),
     new Room(
-        `${filePath}/locations/coachingRoom.png`,
+        `${filePath}/locations/IMG_0796.jpeg`,
         `${filePath}/characters/talkingLlamaCoach.png`,
         ["Coaching Room:", "Hey, do you know which room is only accessible through the coaching room?", "It seems important..."],
         ["Cafeteria", "Ordinary Classroom", "Testing Room", "Server Room"],
@@ -40,7 +40,7 @@ export const roomList = [
         true
     ),
     new Room(
-        `${filePath}/locations/classroom.png`,
+        `${filePath}/locations/IMG_0792.jpeg`,
         `${filePath}/characters/cantera_BSSE.png`,
         ["Classroom:", "Welcome to the Classroom! You should try a challenge", "This wont be the same as the questions before, you'll need to try a little harder!"],
         ["I guess I can try!", "No I'm scared!", "I don't know...", "That seems too hard"],
@@ -58,7 +58,7 @@ export const roomList = [
         true
     ),
     new Room(
-        `${filePath}/locations/registrar.png`,
+        `${filePath}/locations/IMG_0793.jpeg`,
         `${filePath}/characters/pritchard_MSAAI.png`,
         ["Registrar:", "Neumont has tons of classes available to choose from!", "Which of the following is NOT a degree program at Neumont?"],
         ["BS Computer Science", "BS Software Engines", "MS Artificial Intelligence", "BS Software & Game Dev"],
@@ -76,7 +76,7 @@ export const roomList = [
         true
     ),
     new Room(
-        `${filePath}/locations/office.png`,
+        `${filePath}/locations/IMG_0794.jpeg`,
         `${filePath}/characters/neumontPresident.png`,
         ["President's Office", "Welcome to the President's Office! Can you beat the final challenge and become Neubie Supreme?", "This will be your hardest challenge yet, do you think you can do it?"],
         ["I know I can!", "No way!", "This is way too difficult!", "...I cant do it..."],
