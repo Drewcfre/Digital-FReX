@@ -153,9 +153,11 @@ function setRoom() {
 
     let backgroundImg = new Image();
     backgroundImg.src = currentRoom.backdropURL;
-    backgroundImg.onload = () => ctx.drawImage(backgroundImg, 0, 0, 640, 640);
+    backgroundImg.onload = () => {
+        ctx.drawImage(backgroundImg, 0, 0, 640, 640);
 
-    let npcImg = new Image();
-    npcImg.src = currentRoom.roomNPCs;
-    npcImg.onload = () => ctx.drawImage(npcImg, 15, 175, 300, 400);
+        let npcImg = new Image();
+        npcImg.src = currentRoom.roomNPCs;
+        npcImg.onload = () => ctx.drawImage(npcImg, 15, 175, 300, 400);
+    }
 }
